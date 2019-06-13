@@ -56,12 +56,12 @@ async def on_message(message):
 @client.event
 async def on_server_join(server):
     logger.info("Bot added to server '{}'".format(server.name))
-    logger.info("Bot currently running on {} server(s)".format(len(client.servers)))
+    logger.info("Bot currently running on {} server(s)".format(len(client.guilds)))
     
 @client.event
 async def on_ready():
     logger.info("Logged in as '{}', client ID '{}'". format(client.user.name, client.user.id))
-    logger.info("Bot currently running on {} server(s)".format(len(client.servers)))
+    logger.info("Bot currently running on {} server(s)".format(len(client.guilds)))
 
 if __name__ == '__main__':
     try:
