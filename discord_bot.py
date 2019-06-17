@@ -1,10 +1,14 @@
 # Standard library imports
+import sys
 import os
 import logging
 from logging.config import fileConfig
 
 # Third party imports
 import discord
+
+# Path hack
+sys.path.insert(0, os.path.abspath('..'))
 
 # Local application imports
 from utils.core import get_env, get_random_quote # bot standard functions
