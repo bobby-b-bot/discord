@@ -4,7 +4,7 @@ In this repository you can find the Discord version of the Bobby B Bot.
 
 ## How to use it
 
-Simply mention the bot's name in your channel '@bobby-b-bot' after adding it via [this link](https://bit.ly/2C0kogN), and the bot will reply with a random quote.
+Simply mention the bot's name in your channel '@Bobby B' after adding it via [this link](https://bit.ly/2C0kogN), and the bot will reply with a random quote.
 
 ## How to install
 
