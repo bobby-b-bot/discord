@@ -44,28 +44,25 @@ except Exception as e:
 
 @client.event
 async def on_message(message):
-    # If running in test environment, do not reply to any calls
-    if environment == 'TEST':
-        return
 
     # Do not reply to comments from these users, including itself (client.user)
     blocked_users = [ client.user ]
 
     # Bot does not reply to itself and only when mentioned
     if client.user.mentioned_in(message) and message.author not in blocked_users:
-        logger.info("Replied to message of user '{}' in server '{}' / channel '{}'".format(message.author, message.server, message.channel))
+        logger.info("Replied to message of user '{}' in guild '{}' / channel '{}'".format(message.author, message.guild, message.channel))
         msg = get_random_quote().format(message)
-        await client.send_message(message.channel, msg)
+        await message.channel.send(msg)
         
 @client.event
-async def on_server_join(server):
+async def on_guild_join(server):
     logger.info("Bot added to server '{}'".format(server.name))
-    logger.info("Bot currently running on {} server(s)".format(len(client.guilds)))
+    logger.info("Bot currently running on {} guild(s)".format(len(client.guilds)))
     
 @client.event
 async def on_ready():
     logger.info("Logged in as '{}', client ID '{}'". format(client.user.name, client.user.id))
-    logger.info("Bot currently running on {} server(s)".format(len(client.guilds)))
+    logger.info("Bot currently running on {} guild(s)".format(len(client.guilds)))
 
 if __name__ == '__main__':
     try:
