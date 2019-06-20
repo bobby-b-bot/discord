@@ -1,4 +1,5 @@
 # Bobby B Bot - Discord version
+[![Build Status](https://travis-ci.org/bobby-b-bot/discord.svg?branch=master)](https://travis-ci.org/bobby-b-bot/discord)
 
 In this repository you can find the Discord version of the Bobby B Bot.  
 
