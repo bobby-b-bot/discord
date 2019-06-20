@@ -1,5 +1,5 @@
 # Bobby B Bot - Discord version
-[![Build Status](https://travis-ci.org/bobby-b-bot/discord.svg?branch=master)](https://travis-ci.org/bobby-b-bot/discord)
+[![Build Status](https://travis-ci.org/bobby-b-bot/discord.svg?branch=master)](https://travis-ci.org/bobby-b-bot/discord) ![GitHub release](https://img.shields.io/github/release/bobby-b-bot/discord.svg) ![GitHub All Releases](https://img.shields.io/github/downloads/bobby-b-bot/discord/total.svg) ![GitHub issues](https://img.shields.io/github/issues-raw/bobby-b-bot/discord.svg) ![GitHub](https://img.shields.io/github/license/bobby-b-bot/discord.svg)
 
 In this repository you can find the Discord version of the Bobby B Bot.  
 
