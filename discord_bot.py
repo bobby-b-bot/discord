@@ -15,7 +15,6 @@ from utils.core import get_env, get_random_quote # bot standard functions
 
 # validate all mandatory files exist before starting
 assert os.path.isfile('../utils/logging_config.ini') # Logs config file
-assert os.path.isfile('.env')                       # environment variables file
 
 # Instantiate logging in accordance with config file
 fileConfig('../utils/logging_config.ini')
